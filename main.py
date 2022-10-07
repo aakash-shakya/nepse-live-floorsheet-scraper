@@ -2,6 +2,10 @@ from handleRequests import HandleRequests
 from scrapper import Scrapper
 
 class NepseScrapper:
+    '''
+        scrapes the data, gets the data from the response and generates the excel file.
+    '''
+
     def __init__(self, url, body):
         self.url = url
         self.body = body
@@ -20,6 +24,10 @@ class NepseScrapper:
 
 
 if __name__ == "__main__":
+    '''
+        the 'body' can be tweaked i.e. stock-symbol can be added to scrape
+        floorsheet related to specific stock.
+    '''
     url = "http://www.nepalstock.com/floorsheet/"
     body = {
         "contract-no": "",

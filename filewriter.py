@@ -3,7 +3,9 @@ import os
 
 
 def generate_excel_file(filename, arr):
-    
+    '''
+        generates the excel file from the list of the scraped data
+    '''
     with open (filename + str(datetime.today().date()) +'__' +str(datetime.now().strftime("%H_%M_%S")) +'.xlsx', 'w') as f:
         for i in arr:
             for j in i:

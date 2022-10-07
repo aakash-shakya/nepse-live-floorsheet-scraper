@@ -3,7 +3,11 @@ from constants import REQUEST_HEADERS
 
 
 class HandleRequests:
+    '''
+        handles the request method GET, POST
 
+        also handles the response from request.
+    '''
     
 
     def __init__(self, url, body):
